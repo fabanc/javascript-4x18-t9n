@@ -1,0 +1,33 @@
+{
+  "name": "javascript-4x18-t9n",
+  "version": "1.0.0",
+  "description": "This repo is a demo desgined to learn how to use translations bundle with the JavaScript API at 4.18. Since 4.16, Esri has dropped using dojo as a tool for managing translations files and started usung t9n. Which means, we need to learn how to use this tools as GIS developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabanc/javascript-4x18-t9n.git"
+  },
+  "keywords": [
+    "Esri",
+    "JavaScript",
+    "4.18",
+    "Typescript",
+    "Translations",
+    "T9N"
+  ],
+  "author": "Fabien Ancelin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabanc/javascript-4x18-t9n/issues"
+  },
+  "homepage": "https://github.com/fabanc/javascript-4x18-t9n#readme",
+  "dependencies": {
+    "@types/arcgis-js-api": "^4.18.0",
+    "arcgis-js-api": "^4.18.1",
+    "tslib": "^2.1.0"
+  }
+}
