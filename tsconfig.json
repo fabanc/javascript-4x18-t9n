@@ -13,10 +13,11 @@
     "suppressImplicitAnyIndexErrors": true,
     "importHelpers": true,
     "moduleResolution": "node",
-    "outDir": "js"
+    "outDir": "js",
+    "rootDir": "custom_widgets"
   },
   "include": [
-    "./app/*"
+    "./custom_widgets/*/**"
   ],
   "exclude": [
     "node_modules"

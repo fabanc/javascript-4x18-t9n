@@ -19,7 +19,7 @@
       window.dojoConfig = {
         packages: [
           {
-            name: "app",
+            name: "custom_widgets",
             location: locationPath + "/js"
           }
         ]
@@ -29,6 +29,24 @@
   </head>
   <body>
     <div id="viewDiv"></div>
-    <script>require(["app/main"]);</script>
+    <script>require(["esri/Map", "esri/views/MapView", "custom_widgets/Recenter/Recenter"], function(EsriMap, MapView, { default: Recenter }){
+      const map = new EsriMap({
+        basemap: "streets"
+      });
+
+      const view = new MapView({
+        map: map,
+        container: "viewDiv",
+        center: [-118.244, 34.052],
+        zoom: 12
+      });
+
+      const recenter = new Recenter(
+        {view: view, initialCenter: [-100.33, 43.69]
+      }); 
+
+      view.ui.add(recenter, 'top-right');
+          });
+    </script>
   </body>
 </html>

@@ -5,7 +5,7 @@ define(["require", "exports", "tslib", "esri/core/accessorSupport/decorators", "
     var CSS = {
         base: "recenter-tool"
     };
-    var Recenter = /** @class */ (function (_super) {
+    var Recenter = (function (_super) {
         tslib_1.__extends(Recenter, _super);
         function Recenter(params) {
             var _this = _super.call(this, params) || this;
@@ -16,7 +16,6 @@ define(["require", "exports", "tslib", "esri/core/accessorSupport/decorators", "
             var _this = this;
             watchUtils.init(this, "view.center, view.interacting, view.scale", function () { return _this._onViewChange(); });
         };
-        // Public method
         Recenter.prototype.render = function () {
             var _a = this.state, x = _a.x, y = _a.y, scale = _a.scale;
             var styles = {

@@ -34,7 +34,7 @@ const CSS = {
   };
 
 @subclass("esri.widgets.Recenter")
-  class Recenter extends Widget {
+class Recenter extends Widget {
 
     //----------------------------------
 //  view
