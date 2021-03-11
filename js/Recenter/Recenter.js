@@ -45,6 +45,9 @@ define(["require", "exports", "tslib", "esri/core/accessorSupport/decorators", "
             this.view.center = this.initialCenter;
         };
         tslib_1.__decorate([
+            widget_1.messageBundle("./assets/t9n")
+        ], Recenter.prototype, "messages", void 0);
+        tslib_1.__decorate([
             decorators_1.property(),
             widget_1.renderable()
         ], Recenter.prototype, "view", void 0);

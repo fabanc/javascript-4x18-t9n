@@ -3,12 +3,14 @@ import {subclass, property} from "esri/core/accessorSupport/decorators";
 import Widget = require("esri/widgets/Widget");
 import * as watchUtils from "esri/core/watchUtils";
 
-import { renderable, tsx } from "esri/widgets/support/widget";
+import { renderable, tsx, messageBundle} from "esri/widgets/support/widget";
 
 import Point = require("esri/geometry/Point");
 import MapView = require("esri/views/MapView");
 
 type Coordinates = Point | number[] | any;
+
+import RecenterMessages from "./assets/t9n/RecenterMessages";
 
 interface Center {
     x: number;
@@ -36,7 +38,10 @@ const CSS = {
 @subclass("esri.widgets.Recenter")
 class Recenter extends Widget {
 
-    //----------------------------------
+
+@messageBundle("./assets/t9n")
+messages:RecenterMessages;
+//----------------------------------
 //  view
 //----------------------------------
 
