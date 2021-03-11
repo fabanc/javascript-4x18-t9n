@@ -4,13 +4,14 @@ import Widget = require("esri/widgets/Widget");
 import * as watchUtils from "esri/core/watchUtils";
 
 import { renderable, tsx, messageBundle} from "esri/widgets/support/widget";
+import RecenterMessages from "./assets/t9n/RecenterMessages";
 
 import Point = require("esri/geometry/Point");
 import MapView = require("esri/views/MapView");
 
 type Coordinates = Point | number[] | any;
 
-import RecenterMessages from "./assets/t9n/RecenterMessages";
+
 
 interface Center {
     x: number;
